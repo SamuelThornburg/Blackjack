@@ -56,6 +56,24 @@ namespace Cards
             PlayerCards.Children.Add(_playerCard2);
             DealerCards.Children.Add(_dealerCard1);
             DealerCards.Children.Add(_dealerCard2);
+
+            // Add stand and hit buttons once start button is clicked
+            HitButton.Visibility = Visibility.Visible;
+            StandButton.Visibility = Visibility.Visible;
+        }
+
+        private void HitButton_Click(object sender, RoutedEventArgs e)
+        {
+            // draw a card for the player from the deck
+            Card drawnCard = _deck.Draw();
+
+            
+
+        }
+
+        private void StandButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
