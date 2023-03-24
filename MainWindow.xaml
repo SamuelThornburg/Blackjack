@@ -22,6 +22,9 @@
                 <WrapPanel x:Name="PlayerCards" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" MaxHeight="100" Margin="20,0" />
                 <WrapPanel x:Name="DealerCards" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" MaxHeight="100" Margin="20,0" />
             </Grid>
+            <Button x:Name="HitButton" Content="Hit" Click="HitButton_Click" Visibility="Collapsed" Margin="187,40,186,10" />
+            <Button x:Name="StandButton" Content="Stand" Click="StandButton_Click" Visibility="Collapsed" Margin="187,70,186,10" />
+
 
         </Grid>
     </Viewbox>
